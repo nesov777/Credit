@@ -17,8 +17,16 @@ def csv_dict_reader(file_obj, data = [], cost = []):
         data.append(line["Дата"]),
         cost.append(line["Расход"])
 
+# TO DO ammount calc
+        
+#TO DO interest calc
+        
+# TO DO cashback calc
+
 if __name__ == "__main__":
     with open("data.csv") as f_obj:
+        data=[]
+        cost=[]
         csv_dict_reader(f_obj, data, cost)
         print(data)
         print(cost)
